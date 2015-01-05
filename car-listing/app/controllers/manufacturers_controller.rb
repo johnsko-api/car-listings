@@ -26,8 +26,6 @@ def create
 end
 
 
-
-
 private
 
   def manufacturer_params

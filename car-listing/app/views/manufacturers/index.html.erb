@@ -1,3 +1,4 @@
+<h1>Manufacturers</h1>
 <% @manufacturers.each do |manufacturer| %>
-<li><%= manufacturer.name %></li>
+<h3><%= link_to manufacturer.name, manufacturer %></h3>
 <% end %>
