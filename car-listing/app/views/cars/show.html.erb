@@ -1,0 +1,13 @@
+<h1>Cars</h1>
+<div>
+  <ul>Manufacturer: <%= Manufacturer.find(@car.manufacturer_id).name %></ul>
+  <ul>Make: <%= @car.make.capitalize %></ul>
+  <ul>Color: <%= @car.color.capitalize %></ul>
+  <ul>Year: <%= @car.year %></ul>
+  <ul>Mileage: <%= @car.mileage %></ul>
+  <% if @car.description = [] %>
+  <ul>Description: Description is currently not available</ul>
+  <% else %>
+  <ul>Description: <%= @car.description %></ul>
+  <% end %>
+</div>

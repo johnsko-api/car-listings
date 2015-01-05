@@ -1,0 +1,12 @@
+<h1>Add Car</h1>
+<%= simple_form_for(@car) do |f| %>
+<%= f.association :manufacturer %>
+
+<li><%= f.input :make %></li>
+<li><%= f.input :color %></li>
+<li><%= f.input :year %></li>
+<li><%= f.input :mileage %></li>
+<li><%= f.input :description %></li>
+
+<%= f.submit 'Submit' %>
+<% end %>

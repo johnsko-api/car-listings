@@ -11,6 +11,7 @@ end
 
 def show
   @manufacturer = Manufacturer.find(params[:id])
+  @cars = Car.where(manufacturer_id: params[:id])
 end
 
 def create

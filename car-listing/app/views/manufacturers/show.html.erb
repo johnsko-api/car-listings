@@ -2,4 +2,6 @@
 <%= @manufacturer.name %></ul>
 <ul>Origin:
 <%= @manufacturer.country %></ul>
-<%= link_to "Edit", edit_manufacturer_path %>
+<% @cars.each do |car| %>
+<li><%= car.color.capitalize %> <%= link_to car.make.capitalize, car %> <%= car.year %></li>
+<% end %>

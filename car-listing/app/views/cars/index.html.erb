@@ -1,0 +1,10 @@
+<h1>Cars</h1>
+<% @cars.each do |car| %>
+  <div>
+    <ul>Manufacturer: <%= Manufacturer.find(car.manufacturer_id).name %></ul>
+    <ul>Make: <%= link_to car.make.capitalize, car %></ul>
+
+  </div>
+==================================
+
+<% end %>

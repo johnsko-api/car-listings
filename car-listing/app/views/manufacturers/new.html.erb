@@ -1,9 +1,7 @@
 <h1>Add Manufacturer</h1>
-<%= form_for @manufacturer do |f| %>
-<li><%= f.label :name %>
-<%= f.text_field :name %></li>
-<li><%= f.label :country %>
-<%= f.text_area :country %></li>
+<%= simple_form_for(@manufacturer) do |f| %>
+<li><%= f.input :name %></li>
+<li><%= f.input :country %></li>
 
 <%= f.submit 'Submit' %>
 <% end %>
