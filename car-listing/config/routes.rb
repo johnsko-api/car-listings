@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'manufacturers#index'
+  resources :manufacturers
 
 end
