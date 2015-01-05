@@ -18,7 +18,7 @@ def create
 
   if @manufacturer.save
     flash[:notice] = "You've successfully submitted a manufacturer!"
-    redirect_to @manufacturer
+    redirect_to root_path
   else
     flash[:alert] = @manufacturer.errors.full_messages
     render "new"

@@ -1,4 +1,7 @@
 <h1>Manufacturers</h1>
 <% @manufacturers.each do |manufacturer| %>
-<h3><%= link_to manufacturer.name, manufacturer %></h3>
+  <div>
+    <ul>Manufacturer: <%= manufacturer.name.capitalize %></ul>
+    <ul>Origin: <%= manufacturer.country.capitalize %></ul>
+  </div>
 <% end %>
