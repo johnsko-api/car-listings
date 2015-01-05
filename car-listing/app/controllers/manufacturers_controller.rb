@@ -20,7 +20,7 @@ def create
     flash[:notice] = "You've successfully submitted a manufacturer!"
     redirect_to @manufacturer
   else
-    flash[:alert] = "You have failed to meet the appropriate criteria"
+    flash[:alert] = @manufacturer.errors.full_messages
     render "new"
   end
 end
