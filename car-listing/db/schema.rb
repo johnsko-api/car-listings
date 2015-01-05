@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20150105064109) do
 
   create_table "manufacturers", force: true do |t|
     t.string   "name",       null: false
-    t.integer  "year",       null: false
+    t.string   "country",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
